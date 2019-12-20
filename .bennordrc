@@ -1,0 +1,52 @@
+# home bins
+export PATH="$PATH:$HOME/bin"
+
+#java
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+
+# android
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/build-tools
+
+# shortcuts
+alias e="code"
+alias astudio="$HOME/android-studio//bin/studio.sh"
+
+# IronMQ alias
+export QUEUE_PREFIX=bennord
+
+# git aliases
+alias git-find-repos="find . -maxdepth 4 -name .git -type d | rev | cut -c 6- | rev"
+alias git-find-pull="git-find-repos | xargs -t -I {} git -C {} pull"
+
+# vagrant
+alias vaginfo="vagrant ssh -c 'tailf /var/log/gengo/kubelet/kubelet.INFO'"
+
+# z
+if [ -f ~/z.sh ]; then
+    . ~/z.sh
+fi
+
+# load nvm command script (node.js version manager)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# poetry
+export PATH="$PATH:$HOME/.poetry/bin"
+
+# xrandr (configure displays/monitors)
+alias xrcon="xrandr | grep -E 'connected|\*|3840|1920'"
+alias xr1="
+    xrandr --output DP-1 --mode 3840x2160 --rate 60.00 --primary
+    xrandr --output eDP-1 --auto --below DP-1
+    xrandr --output DP-2 --mode 3840x2160 --rate 60.00 --right-of DP-1
+    xrcon"
+alias xr2="
+    xrandr --output DP-2 --mode 3840x2160 --rate 60.00 --primary
+    xrandr --output eDP-1 --auto --below DP-2
+    xrandr --output DP-1 --mode 3840x2160 --rate 60.00 --right-of DP-2
+    xrcon"
