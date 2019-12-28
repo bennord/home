@@ -39,7 +39,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.poetry/bin"
 
 # xrandr (configure displays/monitors)
-alias xrcon="xrandr | grep -E 'connected|\*|3840|1920'"
+alias xrcon="xrandr | grep -E 'connected|\*|3840'"
 alias xr1="
     xrandr --output DP-1 --mode 3840x2160 --rate 60.00 --primary
     xrandr --output eDP-1 --auto --below DP-1
@@ -50,3 +50,13 @@ alias xr2="
     xrandr --output eDP-1 --auto --below DP-2
     xrandr --output DP-1 --mode 3840x2160 --rate 60.00 --right-of DP-2
     xrcon"
+
+# github repo browser
+function gh() {
+    firefox "https://github.com/$1"
+}
+
+functon ghg() {
+    gh "gengo/$1"
+}
+alias ghai="ghg ai-dev-tools"
