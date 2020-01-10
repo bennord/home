@@ -39,17 +39,31 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.poetry/bin"
 
 # xrandr (configure displays/monitors)
-alias xrcon="xrandr | grep -E 'connected|\*|3840'"
+alias xrc="xrandr | grep -E 'connected|\*|3840'"
+alias xr1p="xrandr --output DP-1 --mode 3840x2160 --rate 60.00 --primary"
+alias xr1s="xrandr --output DP-2 --mode 3840x2160 --rate 60.00 --right-of DP-1"
+alias xr1e="xrandr --output eDP-1 --auto --below DP-1"
+
+alias xr2p="xrandr --output DP-2 --mode 3840x2160 --rate 60.00 --primary"
+alias xr2s="xrandr --output DP-1 --mode 3840x2160 --rate 60.00 --right-of DP-2"
+alias xr2e="xrandr --output eDP-1 --auto --below DP-2"
+
 alias xr1="
-    xrandr --output DP-1 --mode 3840x2160 --rate 60.00 --primary
-    xrandr --output eDP-1 --auto --below DP-1
-    xrandr --output DP-2 --mode 3840x2160 --rate 60.00 --right-of DP-1
-    xrcon"
+    xr1p
+    sleep 5
+    xr1s
+    sleep 5
+    xr1e
+    sleep 1
+    xrc"
 alias xr2="
-    xrandr --output DP-2 --mode 3840x2160 --rate 60.00 --primary
-    xrandr --output eDP-1 --auto --below DP-2
-    xrandr --output DP-1 --mode 3840x2160 --rate 60.00 --right-of DP-2
-    xrcon"
+    xr2p
+    sleep 5
+    xr2s
+    sleep 5
+    xr2e
+    sleep 1
+    xrc"
 
 # github repo browser
 function gh() {
@@ -60,3 +74,7 @@ functon ghg() {
     gh "gengo/$1"
 }
 alias ghai="ghg ai-dev-tools"
+
+# restore window positions (requires wmctrl)
+alias ws="lwsm save"
+alias wr="lwsm restore"
