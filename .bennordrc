@@ -70,7 +70,7 @@ function gh() {
     firefox "https://github.com/$1"
 }
 
-functon ghg() {
+function ghg() {
     gh "gengo/$1"
 }
 alias ghai="ghg ai-dev-tools"
@@ -78,3 +78,8 @@ alias ghai="ghg ai-dev-tools"
 # restore window positions (requires wmctrl)
 alias ws="lwsm save"
 alias wr="lwsm restore"
+
+# pulseaudio virtual sink/source
+function vac() {
+    pacmd load-module module-null-sink sink_name=$1 sink_properties=device.description=$1
+}
