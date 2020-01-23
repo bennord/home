@@ -93,7 +93,7 @@ function vac-add() {
 }
 function vac-remove() {
     pacmd list-sinks | grep -E 'index:|name:|module:' | tr '\n' ' ' | perl -n \
-        -e "my \$sink_name = quotemeta $1;" \
+        -e "my \$sink_name = quotemeta \"$1\";" \
         -e '/name: \<(${sink_name})\>\s+module: (\d+)\s/;' \
         -e "if (not \$2) { print \"No sink exists with the name \'$1\'\n\"; }" \
         -e 'if ($2) { print "Running \"pacmd unload-module\" for sink:$1 module:$2\n"; }' \
