@@ -49,21 +49,21 @@ alias xx2s="xrandr --output DP-1 --mode 3840x2160 --rate 60.00 --right-of DP-2"
 alias xx2e="xrandr --output eDP-1 --auto --below DP-2"
 
 alias xx1="
-    xr1p
+    xx1p
     sleep 5
-    xr1s
+    xx1s
     sleep 5
-    xr1e
+    xx1e
     sleep 1
-    xrc"
+    xxc"
 alias xx2="
-    xr2p
+    xx2p
     sleep 5
-    xr2s
+    xx2s
     sleep 5
-    xr2e
+    xx2e
     sleep 1
-    xrc"
+    xxc"
 
 # github repo browser
 function gh() {
