@@ -101,3 +101,6 @@ function vac-remove() {
         -e 'if ($2) { `pacmd unload-module $2`; }'
     vac-list
 }
+
+# minikube
+alias ministart="minikube start --kubernetes-version=v1.14.0"
