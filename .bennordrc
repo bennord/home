@@ -104,3 +104,12 @@ function vac-remove() {
 
 # minikube
 alias ministart="minikube start --kubernetes-version=v1.14.0"
+
+# ionic build/copy/installDebug
+function aibi() {
+    cd ~/projects/ai-collection
+    ionic build
+    ionic cap copy android
+    cd ~/projects/ai-collection/android
+    ./gradlew installDebug
+}
