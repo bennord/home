@@ -76,7 +76,8 @@ function ghg() {
 function ghb() {
     gh "bennordgengo/$1"
 }
-alias ghai="ghg ai-dev-tools"
+alias ghaid="ghg ai-dev-tools"
+alias ghaic="ghg ai-collection"
 
 # restore window positions (requires wmctrl)
 alias ws="lwsm save"
