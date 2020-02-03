@@ -67,14 +67,28 @@ alias xx2="
 
 # github repo browser
 function gh() {
+    local remote="$1"
+    if [ "$remote" = "" ]; then
+        remote="origin"
+    fi
+    git remote -v | perl \
+        -e "my \$remote = quotemeta \"$remote\";" \
+        -e '$_ = do { local $/; <> };' \
+        -e '/^(${remote})\s+git\@github\.com:(\S+)\.git\s+\(push\)/m;' \
+        -e 'if (not $2) { print "No remote exists with the name \"$remote\"\n"; }' \
+        -e 'if ($2) { print "Opening remote:$1 at url:https:\/\/github.com\/$2\n"; }' \
+        -e 'if ($2) { `firefox "https://github.com/$2"`; }'
+}
+
+function ghr() {
     firefox "https://github.com/$1"
 }
 
 function ghg() {
-    gh "gengo/$1"
+    ghr "gengo/$1"
 }
 function ghb() {
-    gh "bennordgengo/$1"
+    ghr "bennordgengo/$1"
 }
 alias ghaid="ghg ai-dev-tools"
 alias ghaic="ghg ai-collection"
