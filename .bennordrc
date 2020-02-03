@@ -126,4 +126,5 @@ function aibi() {
     ionic cap copy android
     cd ~/projects/ai-collection/android
     ./gradlew installDebug
+    cd ~/projects/ai-collection
 }
