@@ -14,6 +14,7 @@ Firefox add-ons
 - ublock origin
 - lastpass
 - cors everywhere
+- react devtools
 
 vscode 
 ```sh
@@ -102,3 +103,8 @@ sudo apt update
 sudo apt install touchpad-indicator
 ```
 set touchpad-indicator to be a startup application (can't use the in-app preferences for this, it will crash)
+
+install PulseAudio Volume Control
+```
+sudo apt install pavucontrol
+```
