@@ -134,3 +134,11 @@ add python versions, i.e.:
 ```sh
 pyenv install 3.7.5
 ```
+choose global default version
+```sh
+pyenv global 3.7.5
+```
+create local version in project folder
+```
+pyenv local 3.7.5
+```
