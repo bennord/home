@@ -23,6 +23,7 @@ sudo apt install code
 vscode add-ons
 - prettier (width: 100, commas: es5, package_manager: yarn)
 - gitlens
+- python
 
 
 git
@@ -110,4 +111,17 @@ set touchpad-indicator to be a startup application (can't use the in-app prefere
 install PulseAudio Volume Control
 ```
 sudo apt install pavucontrol
+```
+
+install pyenv
+```sh
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+```
+Add to shell, should be in `.bennordrc`
+```sh
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 ```
