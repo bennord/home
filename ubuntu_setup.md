@@ -42,7 +42,7 @@ ssh-add ~/.ssh/id_rsa
 
 clone bennordgengo/home
 ```sh
-git clone git@github.com:bennordgengo/home.git
+git clone git@github.com:bennordgengo/home.git $HOME
 ```
 
 install curl/zsh
@@ -62,7 +62,18 @@ fi
 install z.sh
 
 install docker
+
 install docker-compose`
+
+add yourself to the docker group so you don't have to `sudo` docker commands
+```
+sudo groupadd docker
+sudo usermod -aG docker $USER
+```
+activate the new group in curent terminal (otherwise logout/login)
+```
+newgrp docker
+```
 
 register ngrok
 
