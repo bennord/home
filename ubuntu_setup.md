@@ -1,6 +1,6 @@
 # Ubuntu setup
 1. Install ubuntu from usb   
-   ```
+   ```sh
    sudo apt update
    sudo apt upgrade
    ```
@@ -39,7 +39,7 @@
    ```
 
 1. create or use existing add ssh key
-   ```
+   ```sh
    chmod 600 ~/.ssh/id_rsa
    eval $(ssh-agent -s)
    ssh-add ~/.ssh/id_rsa
@@ -96,12 +96,12 @@
 1. install poetry from curl (modify python to python3)
 
 1. install lwsm (window save manager)
-   ```
+   ```sh
    npm install -g linux-window-session-manager
    ```
 
 1. install ionic cli
-   ```
+   ```sh
    npm install -g @ionic/cli
    ```
 
@@ -109,7 +109,7 @@
 1. install vlc
 
 1. install touchpad-indicator
-   ```
+   ```sh
    sudo add-apt-repository ppa:atareao/atareao
    sudo apt update
    sudo apt install touchpad-indicator
@@ -117,7 +117,7 @@
 1. set touchpad-indicator to be a startup application (can't use the in-app preferences for this, it will crash)
 
 1. install PulseAudio Volume Control
-   ```
+   ```sh
    sudo apt install pavucontrol
    ```
 
@@ -146,6 +146,6 @@
    pyenv global 3.7.5
    ```
 1. create local version in project folder
-   ```
+   ```sh
    pyenv local 3.7.5
    ```
