@@ -22,6 +22,7 @@ sudo apt install code
 ```
 vscode add-ons
 - prettier (width: 100, commas: es5, package_manager: yarn)
+- gitlens
 
 
 git
@@ -45,6 +46,8 @@ clone bennordgengo/home
 ```sh
 git clone git@github.com:bennordgengo/home.git $HOME
 ```
+
+terminal - set default height width
 
 install curl/zsh
 
