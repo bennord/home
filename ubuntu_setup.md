@@ -108,6 +108,9 @@
 
 1. install slack from .deb package
 1. install vlc
+   ```sh
+   sudo apt install vlc
+   ```
 
 1. install touchpad-indicator
    ```sh
@@ -149,4 +152,8 @@
 1. create local version in project folder
    ```sh
    pyenv local 3.7.5
+   ```
+1. install gimp
+   ```sh
+   sudo apt install gimp
    ```
