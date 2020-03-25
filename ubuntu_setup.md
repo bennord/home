@@ -24,6 +24,7 @@ vscode add-ons
 - prettier (width: 100, commas: es5, package_manager: yarn)
 - gitlens
 - python
+- better TOML
 
 
 git
