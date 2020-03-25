@@ -5,6 +5,7 @@
    sudo apt upgrade
    ```
 1. Firefox preferences
+   - Ask to save passwords: no
    - ctrl-tab cycles through tabs in recently used order: no
    - Always ask you where to save files
    - Use smooth scrolling: no
