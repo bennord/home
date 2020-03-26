@@ -22,12 +22,13 @@
    sudo apt install code
    ```
 
-1. vscode add-ons
+1. vscode add-ons/settings
    - prettier (width: 100, commas: es5, package_manager: yarn)
    - gitlens
    - python
    - better TOML
-   - Markdown All In One
+   - Markdown All In One (order lists auto renumber: no)
+   - Global settings: format on save
 
 1. git
    ```sh
