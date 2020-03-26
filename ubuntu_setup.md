@@ -153,6 +153,15 @@
    ```sh
    pyenv local 3.7.5
    ```
+1. add `.vscode/settings.json` for linter path in python projects
+   ```json
+   {
+     "python.linting.flake8Enabled": true,
+     "python.linting.enabled": true,
+     "python.linting.pylintEnabled": false,
+     "python.linting.flake8Path": "${env:VIRTUAL_ENV}/bin/flake8"
+   }
+   ```
 1. install gimp
    ```sh
    sudo apt install gimp
