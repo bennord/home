@@ -1,10 +1,12 @@
 # Ubuntu setup
-1. Install ubuntu from usb   
+
+1. Install ubuntu from usb
    ```sh
    sudo apt update
    sudo apt upgrade
    ```
 1. Firefox preferences
+
    - Ask to save passwords: no
    - ctrl-tab cycles through tabs in recently used order: no
    - Always ask you where to save files
@@ -12,17 +14,20 @@
    - Home content: TopSites: no, Highlights: no, Snippets: no
 
 1. Firefox add-ons
+
    - ublock origin
    - lastpass
    - cors everywhere
    - react devtools
 
-1. vscode 
+1. vscode
+
    ```sh
    sudo apt install code
    ```
 
 1. vscode add-ons/settings
+
    - prettier (width: 100, commas: es5, package_manager: yarn)
    - gitlens
    - python
@@ -31,6 +36,7 @@
    - Global settings: format on save
 
 1. git
+
    ```sh
    sudo apt install git gitk git-gui
    git config --global user.email ben.nordstrom@gengo.com`
@@ -41,6 +47,7 @@
    ```
 
 1. create or use existing add ssh key
+
    ```sh
    chmod 600 ~/.ssh/id_rsa
    eval $(ssh-agent -s)
@@ -48,6 +55,7 @@
    ```
 
 1. clone bennordgengo/home
+
    ```sh
    git clone git@github.com:bennordgengo/home.git $HOME
    ```
@@ -60,6 +68,7 @@
    sudo apt install curl
    sudo apt install zsh
    ```
+
 1. install oh-my-zsh
 1. add .bennordrc to .zshrc
    ```sh
@@ -80,6 +89,7 @@
    sudo usermod -aG docker $USER
    ```
 1. activate the new group in curent terminal (otherwise logout/login)
+
    ```sh
    newgrp docker
    ```
@@ -98,17 +108,20 @@
 1. install poetry from curl (modify python to python3)
 
 1. install lwsm (window save manager)
+
    ```sh
    npm install -g linux-window-session-manager
    ```
 
 1. install ionic cli
+
    ```sh
    npm install -g @ionic/cli
    ```
 
 1. install slack from .deb package
 1. install vlc
+
    ```sh
    sudo apt install vlc
    ```
@@ -122,6 +135,7 @@
 1. set touchpad-indicator to be a startup application (can't use the in-app preferences for this, it will crash)
 
 1. install PulseAudio Volume Control
+
    ```sh
    sudo apt install pavucontrol
    ```
@@ -167,3 +181,4 @@
    ```sh
    sudo apt install gimp
    ```
+1. install zoom from website .deb
