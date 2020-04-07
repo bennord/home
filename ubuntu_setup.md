@@ -171,12 +171,12 @@
 1. add `.vscode/settings.json` for linter/formatter path in python projects
    ```json
    {
-      "python.linting.flake8Enabled": true,
-      "python.linting.enabled": true,
-      "python.linting.pylintEnabled": false,
-      "python.linting.flake8Path": "${env:VIRTUAL_ENV}/bin/flake8",
-      "python.formatting.provider": "black",
-      "python.formatting.blackPath": "${env:VIRTUAL_ENV}/bin/black"
+     "python.linting.flake8Enabled": true,
+     "python.linting.enabled": true,
+     "python.linting.pylintEnabled": false,
+     "python.linting.flake8Path": "${env:VIRTUAL_ENV}/bin/flake8",
+     "python.formatting.provider": "black",
+     "python.formatting.blackPath": "${env:VIRTUAL_ENV}/bin/black"
    }
    ```
 1. install gimp
@@ -184,3 +184,14 @@
    sudo apt install gimp
    ```
 1. install zoom from website .deb
+1. install macchanger
+   ```
+   sudo apt install macchanger
+   ```
+1. install japanese IME support
+   - launch `Language Support`
+   - click `[Install / Remove Languages...]`
+   - add `Japanese`
+   - logout/login
+   - launch `Region & Language`
+   - add `Input Sources` -> `Japanese (Mosc)`
