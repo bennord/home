@@ -206,3 +206,8 @@
    Unzip to `~/android-studio`
 
    Launch with `android-studio/bin/studio.sh`
+
+   Install canberra-gtk-module to prevent error message on launch.
+   ```
+   sudo apt install libcanberra-gtk-module
+   ```
