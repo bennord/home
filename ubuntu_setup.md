@@ -195,3 +195,14 @@
    - logout/login
    - launch `Region & Language`
    - add `Input Sources` -> `Japanese (Mosc)`
+1. Install android studio
+
+   Download: https://developer.android.com/studio
+   
+   Install: https://developer.android.com/studio/install
+   ```
+   sudo apt install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+   ```
+   Unzip to `~/android-studio`
+
+   Launch with `android-studio/bin/studio.sh`
