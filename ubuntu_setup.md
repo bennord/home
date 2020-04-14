@@ -211,3 +211,9 @@
    ```
    sudo apt install libcanberra-gtk-module
    ```
+1. Subscribe to latest graphics drivers ppa
+   
+   https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers
+   ```
+   sudo add-apt-repository ppa:oibaf/graphics-drivers
+   ```
