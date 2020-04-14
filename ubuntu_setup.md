@@ -198,22 +198,33 @@
 1. Install android studio
 
    Download: https://developer.android.com/studio
-   
+
    Install: https://developer.android.com/studio/install
+
    ```
    sudo apt install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
    ```
+
    Unzip to `~/android-studio`
 
    Launch with `android-studio/bin/studio.sh`
 
    Install canberra-gtk-module to prevent error message on launch.
+
    ```
    sudo apt install libcanberra-gtk-module
    ```
+
 1. Subscribe to latest graphics drivers ppa
-   
+
    https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers
+
    ```
    sudo add-apt-repository ppa:oibaf/graphics-drivers
+   ```
+
+   This will clear up the following errors in the android emulator related to vulkan drivers:
+
+   ```
+   Emulator: VK_VERSION_1_1 check failed...
    ```
