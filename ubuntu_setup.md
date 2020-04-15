@@ -215,6 +215,13 @@
    sudo apt install libcanberra-gtk-module
    ```
 
+   add the following settings in ~/.android/advancedFeatures.ini
+
+   ```ini
+   Vulkan = on
+   GLDirectMem = on
+   ```
+
 1. Subscribe to latest graphics drivers ppa
 
    https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers
