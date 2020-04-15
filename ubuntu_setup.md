@@ -33,6 +33,7 @@
    - python
    - better TOML
    - Markdown All In One (order lists auto renumber: no)
+   - Rainbow CSV
    - Global settings: format on save
 
 1. git
