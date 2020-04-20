@@ -20,6 +20,11 @@
    - cors everywhere
    - react devtools
 
+1. Install Chrome (for testing)
+   ```sh
+   sudo apt install google-chrome-stable
+   ```
+
 1. vscode
 
    ```sh
