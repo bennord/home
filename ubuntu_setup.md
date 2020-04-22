@@ -24,7 +24,9 @@
    ```sh
    sudo apt install google-chrome-stable
    ```
-
+1. Install system monitor extension
+   https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet
+   
 1. vscode
 
    ```sh
