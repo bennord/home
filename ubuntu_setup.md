@@ -41,6 +41,7 @@
    - better TOML
    - Markdown All In One (order lists auto renumber: no)
    - Rainbow CSV
+   - Swagger Viewer
    - Global settings: format on save
 
 1. git
