@@ -244,3 +244,8 @@
    ```
    Emulator: VK_VERSION_1_1 check failed...
    ```
+
+1. Install query tool for csv files
+   ```
+   sudo apt install q-text-as-data
+   ```

@@ -134,3 +134,8 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# github action log report
+function gh_action_report() {
+    q -H -d , "SELECT \"Repository Slug\",SUM(Quantity) AS QuantitySum FROM $1 GROUP BY \"Repository Slug\" ORDER BY QuantitySum DESC"
+}
