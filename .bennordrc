@@ -139,3 +139,29 @@ fi
 function gh_action_report() {
     q -H -d , "SELECT \"Repository Slug\",SUM(Quantity) AS QuantitySum FROM $1 GROUP BY \"Repository Slug\" ORDER BY QuantitySum DESC"
 }
+
+# TODO: starbucks auth
+# Still not restoring the cookie correctly from file...
+function sbux() {
+    curl 'https://service.wi2.ne.jp/freewifi/starbucks/agreement.html?' \
+        -c ~/starbucks_cookies.txt \
+        -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0' \
+        -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' \
+        -H 'Accept-Language: en-US,en;q=0.5' \
+        --compressed \
+        -H 'Connection: keep-alive' \
+        -H 'Referer: https://service.wi2.ne.jp/freewifi/starbucks/index.html' \
+        -H 'Upgrade-Insecure-Requests: 1'
+
+    curl 'https://service.wi2.ne.jp/wi2auth/xhr/login' \
+        -b ~/starbucks_cookies.txt \
+        -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0' \
+        -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Accept-Language: en-US,en;q=0.5' \
+        --compressed \
+        -H 'Content-Type: application/json' \
+        -H 'X-Requested-With: XMLHttpRequest' \
+        -H 'Origin: https://service.wi2.ne.jp' \
+        -H 'Connection: keep-alive' \
+        -H 'Referer: https://service.wi2.ne.jp/freewifi/starbucks/agreement.html?' \
+        --data-raw '{"login_method":"onetap","login_params":{"agree":"1"}}'
+}
