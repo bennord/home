@@ -92,6 +92,7 @@ ghb() {
 }
 alias ghaid="ghg ai-dev-tools"
 alias ghaic="ghg ai-collection"
+alias ghn="ghr notifications"
 
 # restore window positions (requires wmctrl)
 alias ws="lwsm save"
