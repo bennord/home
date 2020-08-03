@@ -26,7 +26,7 @@
    ```
 1. Install system monitor extension
    https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet
-   
+
 1. vscode
 
    ```sh
@@ -42,6 +42,7 @@
    - Markdown All In One (order lists auto renumber: no)
    - Rainbow CSV
    - Swagger Viewer
+   - DotENV
    - Global settings: format on save
 
 1. git
