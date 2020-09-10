@@ -8,6 +8,7 @@
 1. Ubuntu appearance -> Dark mode
 1. Firefox preferences
 
+   - Themes -> dark mode
    - Ask to save passwords: no
    - ctrl-tab cycles through tabs in recently used order: no
    - Always ask you where to save files
