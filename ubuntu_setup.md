@@ -5,6 +5,7 @@
    sudo apt update
    sudo apt upgrade
    ```
+1. Ubuntu appearance -> Dark mode
 1. Firefox preferences
 
    - Ask to save passwords: no
