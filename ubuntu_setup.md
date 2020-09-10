@@ -252,5 +252,6 @@
    ```
 1. Install kdenlive for video editing
    ```
+   sudo add-apt-repository ppa:kdenlive/kdenlive-stable
    sudo apt install kdenlive
    ```
