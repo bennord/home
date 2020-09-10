@@ -250,3 +250,7 @@
    ```
    sudo apt install q-text-as-data
    ```
+1. Install kdenlive for video editing
+   ```
+   sudo apt install kdenlive
+   ```
