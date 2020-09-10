@@ -255,3 +255,7 @@
    sudo add-apt-repository ppa:kdenlive/kdenlive-stable
    sudo apt install kdenlive
    ```
+   Optional: breeze theme for dark mode
+   ```
+   sudo apt install breeze
+   ```
