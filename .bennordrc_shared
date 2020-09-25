@@ -1,3 +1,7 @@
+# z
+if [ -f ~/z.sh ]; then
+    . ~/z.sh
+fi
 
 # shortcuts
 alias e="code"
@@ -8,11 +12,6 @@ alias git-find-pull="git-find-repos | xargs -t -I {} git -C {} pull"
 
 # vagrant
 alias vaginfo="vagrant ssh -c 'tailf /var/log/gengo/kubelet/kubelet.INFO'"
-
-# z
-if [ -f ~/z.sh ]; then
-    . ~/z.sh
-fi
 
 # xrandr (configure displays/monitors)
 alias xxc="xrandr | grep -E 'connected|\*|3840'"
