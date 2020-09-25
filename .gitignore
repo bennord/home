@@ -3,9 +3,13 @@
 
 # gitignore rules
 !.gitignore
+!.gitignore_global
 
 # shell config
 !.bennordrc*
+
+# setup notes
+!ubuntu_setup.md
 
 # mac hotkey config
 !/.config/
