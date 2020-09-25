@@ -1,3 +1,8 @@
+# shared
+if [ -f ~/.bennordrc_shared ]; then
+    . ~/.bennordrc_shared
+fi
+
 # home bins
 export PATH="$PATH:$HOME/bin"
 
@@ -12,23 +17,12 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/build-tools
 
 # shortcuts
-alias e="code"
 alias astudio="$HOME/android-studio/bin/studio.sh"
 
 # IronMQ alias
 export QUEUE_PREFIX=bennord
 
-# git aliases
-alias git-find-repos="find . -maxdepth 4 -name .git -type d | rev | cut -c 6- | rev"
-alias git-find-pull="git-find-repos | xargs -t -I {} git -C {} pull"
 
-# vagrant
-alias vaginfo="vagrant ssh -c 'tailf /var/log/gengo/kubelet/kubelet.INFO'"
-
-# z
-if [ -f ~/z.sh ]; then
-    . ~/z.sh
-fi
 
 # load nvm command script (node.js version manager)
 export NVM_DIR="$HOME/.nvm"
