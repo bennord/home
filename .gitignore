@@ -5,7 +5,7 @@
 !.gitignore
 
 # shell config
-!.bennordrc
+!.bennordrc*
 
 # mac hotkey config
 !/.config/
