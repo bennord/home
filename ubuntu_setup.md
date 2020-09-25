@@ -82,11 +82,11 @@
    ```
 
 1. install oh-my-zsh
-1. add .bennordrc to .zshrc
+1. add .bennordrc_ubuntu to .zshrc
    ```sh
    # bennordrc
-   if [ -f ~/.bennordrc ]; then
-       . ~/.bennordrc
+   if [ -f ~/.bennordrc_ubuntu ]; then
+       . ~/.bennordrc_ubuntu
    fi
    ```
 1. install z.sh
