@@ -1,0 +1,7 @@
+# shared
+if [ -f ~/.bennordrc_shared ]; then
+    . ~/.bennordrc_shared
+fi
+
+# bins
+export PATH="$PATH:/Applications/Firefox.app/Contents/MacOS"

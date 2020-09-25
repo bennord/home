@@ -1,0 +1,55 @@
+{
+    "title": "Launch apps",
+    "rules": [
+        {
+            "description": "Launch Activity Monitor with command+ctrl+a",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "a",
+                        "modifiers": {
+                            "mandatory": [
+                                "command",
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'Activity Monitor'"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Launch Terminal with command+ctrl+t",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "mandatory": [
+                                "command",
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a Terminal"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

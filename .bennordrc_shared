@@ -1,22 +1,10 @@
-# home bins
-export PATH="$PATH:$HOME/bin"
-
-#java
-export JAVA_HOME=$HOME/android-studio/jre
-
-# android
-export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/build-tools
+# z
+if [ -f ~/z.sh ]; then
+    . ~/z.sh
+fi
 
 # shortcuts
 alias e="code"
-alias astudio="$HOME/android-studio//bin/studio.sh"
-
-# IronMQ alias
-export QUEUE_PREFIX=bennord
 
 # git aliases
 alias git-find-repos="find . -maxdepth 4 -name .git -type d | rev | cut -c 6- | rev"
@@ -24,46 +12,6 @@ alias git-find-pull="git-find-repos | xargs -t -I {} git -C {} pull"
 
 # vagrant
 alias vaginfo="vagrant ssh -c 'tailf /var/log/gengo/kubelet/kubelet.INFO'"
-
-# z
-if [ -f ~/z.sh ]; then
-    . ~/z.sh
-fi
-
-# load nvm command script (node.js version manager)
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# poetry
-export PATH="$PATH:$HOME/.poetry/bin"
-
-# xrandr (configure displays/monitors)
-alias xxc="xrandr | grep -E 'connected|\*|3840'"
-alias xx1p="xrandr --output DP-1 --mode 3840x2160 --rate 60.00 --primary"
-alias xx1s="xrandr --output DP-2 --mode 3840x2160 --rate 60.00 --right-of DP-1"
-alias xx1e="xrandr --output eDP-1 --auto --below DP-1"
-
-alias xx2p="xrandr --output DP-2 --mode 3840x2160 --rate 60.00 --primary"
-alias xx2s="xrandr --output DP-1 --mode 3840x2160 --rate 60.00 --right-of DP-2"
-alias xx2e="xrandr --output eDP-1 --auto --below DP-2"
-
-alias xx1="
-    xx1p
-    sleep 5
-    xx1s
-    sleep 5
-    xx1e
-    sleep 1
-    xxc"
-alias xx2="
-    xx2p
-    sleep 5
-    xx2s
-    sleep 5
-    xx2e
-    sleep 1
-    xxc"
 
 # github repo browser
 gh() {
@@ -93,10 +41,6 @@ ghb() {
 alias ghaid="ghg ai-dev-tools"
 alias ghaic="ghg ai-collection"
 alias ghn="ghr notifications"
-
-# restore window positions (requires wmctrl)
-alias ws="lwsm save"
-alias wr="lwsm restore"
 
 # pulseaudio virtual sink/source
 vac-list() {
@@ -128,13 +72,6 @@ aibi() {
     ./gradlew installDebug
     cd ~/projects/ai-collection
 }
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
 
 # github action log report
 gh_action_report() {
