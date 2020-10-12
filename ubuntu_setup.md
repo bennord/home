@@ -41,7 +41,7 @@
    - gitlens
    - python
    - better TOML
-   - Markdown All In One (order lists auto renumber: no)
+   - Markdown All In One (order lists auto renumber: yes, marker: one)
    - Rainbow CSV
    - Swagger Viewer
    - DotENV
