@@ -22,11 +22,6 @@ alias astudio="$HOME/android-studio/bin/studio.sh"
 # IronMQ alias
 export QUEUE_PREFIX=bennord
 
-# load nvm command script (node.js version manager)
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # poetry
 export PATH="$PATH:$HOME/.poetry/bin"
 
