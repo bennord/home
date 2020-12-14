@@ -44,6 +44,7 @@
    - Markdown All In One (order lists auto renumber: yes, marker: one)
    - Rainbow CSV
    - Swagger Viewer
+   - Syntax Xcode Project Data
    - DotENV
    - Global settings: format on save
 
