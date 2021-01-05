@@ -115,6 +115,7 @@
    nvm install node
    ```
 1. yarn via nvm
+
    ```sh
    npm i -g yarn
    ```
@@ -170,11 +171,15 @@
    ```
 1. add python versions, i.e.:
    ```sh
-   pyenv install 3.7.5
+   pyenv install 3.9.1
    ```
 1. choose default python version
    ```sh
-   pyenv global 3.7.5
+   pyenv global 3.9.1
+   ```
+1. upgrade pip and setuptools in global environment
+   ```
+   pip install -U pip setuptools
    ```
 1. install pipenv
    ```
