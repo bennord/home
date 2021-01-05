@@ -118,7 +118,6 @@
    ```sh
    npm i -g yarn
    ```
-1. install poetry from curl (modify python to python3)
 
 1. install lwsm (window save manager)
 
@@ -157,7 +156,7 @@
    ```sh
    git clone https://github.com/pyenv/pyenv.git ~/.pyenv
    ```
-1. Add to shell, should be in `.bennordrc`
+1. Add to shell, should be in `.bennordrc_shared`
    ```sh
    export PYENV_ROOT="$HOME/.pyenv"
    export PATH="$PYENV_ROOT/bin:$PATH"
@@ -177,9 +176,9 @@
    ```sh
    pyenv global 3.7.5
    ```
-1. create local version in project folder
-   ```sh
-   pyenv local 3.7.5
+1. install pipenv
+   ```
+   sudo apt install pipenv
    ```
 1. add `.vscode/settings.json` for linter/formatter path in python projects
    ```json
