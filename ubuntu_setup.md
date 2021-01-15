@@ -181,9 +181,9 @@
    ```
    pip install -U pip setuptools
    ```
-1. install pipenv
+1. install pipenv in global environemnt
    ```
-   sudo apt install pipenv
+   pip install pipenv
    ```
 1. add `.vscode/settings.json` for linter/formatter path in python projects
    ```json
