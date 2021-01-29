@@ -52,8 +52,8 @@
 
    ```sh
    sudo apt install git gitk git-gui
-   git config --global user.email ben.nordstrom@gengo.com`
-   git config --global user.name bennord`
+   git config --global user.email ben.nordstrom@gengo.com
+   git config --global user.name bennord
    git config --global url.ssh://git@github.com/.insteadOf https://github.com/
    echo ".vscode\n.idea\n.DS_Store" > ~/.gitignore_global
    git config --global core.excludesfile ~/.gitignore_global
