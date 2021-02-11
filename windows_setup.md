@@ -9,21 +9,23 @@ Notes about setting up various things on my windows dev/gaming machine.
    Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
    ```
 
-1. Install packages with scoop
+1. Install shell prompt with scoop
+
    ```powershell
+   # https://ohmyposh.dev/docs/installation
    scoop install https://github.com/JanDeDobbeleer/oh-my-posh3/releases/latest/download/oh-my-posh.json
+
+   # https://github.com/dahlbyk/posh-git
    scoop bucket add extras
    scoop install posh-git
-   scoop install coreutils
-   scoop install which
-   scoop install grep
-   scoop install 7zip
    ```
+
    ```powershell
    # add this to profile.ps1
    Import-Module posh-git
    Invoke-Expression (oh-my-posh --init --shell pwsh --config "$(scoop prefix oh-my-posh)/themes/robbyrussel.omp.json")
    ```
+
 1. Intall `z` like tool
 
    ```powershell
@@ -36,15 +38,23 @@ Notes about setting up various things on my windows dev/gaming machine.
    })
    ```
 
-1. Install posh-git (https://github.com/dahlbyk/posh-git)
-1. Install oh-my-posh (https://ohmyposh.dev/docs/installation)
+1. Install utils with scoop
+
+   ```powershell
+   scoop install coreutils
+   scoop install which
+   scoop install grep
+   scoop install curl
+   scoop install 7zip
+   ```
+
 1. Install vscode
 1. install vscode extensions
 
    - Prettier
    - Gitlens
 
-1. Install pyenv-win
+1. Install pyenv-win (via scoop or git)
 1. Install python via pyenv
    ```
    pyenv install -l

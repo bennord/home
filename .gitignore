@@ -7,6 +7,8 @@
 
 # shell config
 !.bennordrc*
+!benn_setenv.bat
+!bennord_profile.ps1
 
 # setup notes
 !ubuntu_setup.md
