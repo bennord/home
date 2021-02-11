@@ -27,17 +27,7 @@ alias vaginfo="vagrant ssh -c 'tailf /var/log/gengo/kubelet/kubelet.INFO'"
 
 # github repo browser
 gh() {
-    local remote="$1"
-    if [ "$remote" = "" ]; then
-        remote="origin"
-    fi
-    git remote -v | perl \
-        -e "my \$remote = quotemeta \"$remote\";" \
-        -e '$_ = do { local $/; <> };' \
-        -e '/^(${remote})\s+\S*git\@github\.com[\:\/](\S+)\.git\s+\(push\)/m;' \
-        -e 'if (not $2) { print "No remote exists with the name \"$remote\"\n"; }' \
-        -e 'if ($2) { print "Opening remote:$1 at url:https:\/\/github.com\/$2\n"; }' \
-        -e 'if ($2) { `firefox "https://github.com/$2"`; }'
+    perl ~/github_browse.pl
 }
 
 ghr() {
