@@ -3,6 +3,7 @@
 Notes about setting up various things on my windows dev/gaming machine.
 
 1. Install Windows Terminal
+1. Install latest PowerShell version
 1. Install scoop (pacakge manager)
 
    ```powershell
@@ -54,6 +55,10 @@ Notes about setting up various things on my windows dev/gaming machine.
    - Prettier
    - Gitlens
 
+1. Install perl
+   ```
+   scoop install perl
+   ```
 1. Install pyenv-win (via scoop or git)
 1. Install python via pyenv
    ```

@@ -9,6 +9,7 @@
 !.bennordrc*
 !benn_setenv.bat
 !bennord_profile.ps1
+!github_browse.pl
 
 # setup notes
 !ubuntu_setup.md
